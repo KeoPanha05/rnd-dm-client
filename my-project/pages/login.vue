@@ -44,15 +44,14 @@
     data: () => ({
       loading: false,
       model: {
-        // username: 'admin@example.com',
-        // password: 'password'
+        username: 'admin@example.com',
+        password: 'password'
       }
     }),
 
     methods: {
       login() {
         this.loading = true;
-        // if (this.username = )
         setTimeout(() => {
           this.$router.push('/dashboard');
         }, 1000);
