@@ -14,8 +14,7 @@
             :data="dataset.monthVisit"
             :chart-color="color.blue.base"
             type="bar"
-          >
-          </mini-chart>
+          ></mini-chart>
         </v-flex>
         <v-flex lg3 sm6>
           <mini-chart
@@ -25,8 +24,7 @@
             :data="dataset.monthVisit"
             :chart-color="color.green.base"
             type="area"
-          >
-          </mini-chart>
+          ></mini-chart>
         </v-flex>
         <v-flex lg3 sm6>
           <v-card>
@@ -34,7 +32,10 @@
               <div class="layout row ma-0 align-center justify-space-between">
                 <div class="text-box">
                   <div class="subheading pb-2">Bounce Rate</div>
-                  <span class="grey--text">-10% <v-icon small color="green">trending_down</v-icon> </span>
+                  <span class="grey--text">
+                    -10%
+                    <v-icon small color="green">trending_down</v-icon>
+                  </span>
                 </div>
                 <div class="chart">
                   <v-progress-circular
@@ -43,9 +44,7 @@
                     :rotate="360"
                     :value="10"
                     color="success"
-                  >
-                    10
-                  </v-progress-circular>
+                  >10</v-progress-circular>
                 </div>
               </div>
             </v-card-text>
@@ -59,8 +58,7 @@
             :data="dataset.monthVisit"
             :chart-color="color.red.base"
             type="line"
-          >
-          </mini-chart>
+          ></mini-chart>
         </v-flex>
       </v-layout>
       <!-- box chart -->
@@ -76,8 +74,7 @@
             :data="dataset.monthVisit"
             :chart-color="[color.blue.darken1]"
             type="area"
-          >
-          </box-chart>
+          ></box-chart>
         </v-flex>
         <v-flex lg4 sm6 xs12>
           <box-chart
@@ -88,8 +85,7 @@
             :data="dataset.monthVisit"
             :chart-color="[color.pink.lighten2]"
             type="bar"
-          >
-          </box-chart>
+          ></box-chart>
         </v-flex>
         <v-flex lg4 sm6 xs12>
           <box-chart
@@ -100,8 +96,7 @@
             :data="dataset.monthVisit"
             :chart-color="[color.shades.white]"
             type="line"
-          >
-          </box-chart>
+          ></box-chart>
         </v-flex>
       </v-layout>
       <!-- complex chart -->
@@ -116,8 +111,7 @@
                 <div class="subheading">Today</div>
                 <v-spacer></v-spacer>
                 <div class="caption">
-                  <v-icon>trending_up</v-icon>
-                  20%
+                  <v-icon>trending_up</v-icon>20%
                 </div>
               </div>
             </v-card-title>
@@ -140,8 +134,7 @@
                 ]"
                 height="200px"
                 width="100%"
-              >
-              </e-chart>
+              ></e-chart>
             </v-responsive>
             <v-card-text class="white">
               <div class="layout row align-center ma-0">
@@ -150,16 +143,14 @@
                   <div class="subheading mt-2">2500</div>
                 </div>
                 <v-spacer></v-spacer>
-                <div class="">
+                <div class>
                   <v-progress-circular
                     :size="100"
                     :width="15"
                     :rotate="360"
                     :value="10"
                     color="blue"
-                  >
-                    10
-                  </v-progress-circular>
+                  >10</v-progress-circular>
                 </div>
               </div>
             </v-card-text>
@@ -172,14 +163,11 @@
                 <div class="subheading">Today</div>
                 <v-spacer></v-spacer>
                 <div class="caption">
-                  <v-icon>trending_up</v-icon>
-                  20%
+                  <v-icon>trending_up</v-icon>20%
                 </div>
               </div>
             </v-card-title>
-            <v-responsive
-              class="white--text"
-            >
+            <v-responsive class="white--text">
               <e-chart
                 :path-option="[
                   ['dataset.source', dataset.monthVisit],
@@ -192,8 +180,7 @@
                 ]"
                 height="200px"
                 width="100%"
-              >
-              </e-chart>
+              ></e-chart>
             </v-responsive>
             <v-card-text class="white">
               <div class="layout row align-center ma-0">
@@ -202,16 +189,14 @@
                   <div class="subheading mt-2">2500</div>
                 </div>
                 <v-spacer></v-spacer>
-                <div class="">
+                <div class>
                   <v-progress-circular
                     :size="100"
                     :width="15"
                     :rotate="360"
                     :value="10"
                     color="blue"
-                  >
-                    10
-                  </v-progress-circular>
+                  >10</v-progress-circular>
                 </div>
               </div>
             </v-card-text>
@@ -224,13 +209,11 @@
                 <div class="subheading">Today</div>
                 <v-spacer></v-spacer>
                 <div class="caption">
-                  <v-icon>trending_up</v-icon>
-                  20%
+                  <v-icon>trending_up</v-icon>20%
                 </div>
               </div>
             </v-card-title>
-            <v-responsive
-            >
+            <v-responsive>
               <e-chart
                 :path-option="[
                 ['dataset.source', dataset.monthVisit],
@@ -246,8 +229,7 @@
               ]"
                 height="200px"
                 width="100%"
-              >
-              </e-chart>
+              ></e-chart>
             </v-responsive>
             <v-card-text class="white">
               <div class="layout row align-center ma-0">
@@ -256,16 +238,14 @@
                   <div class="subheading mt-2">2500</div>
                 </div>
                 <v-spacer></v-spacer>
-                <div class="">
+                <div class>
                   <v-progress-circular
                     :size="100"
                     :width="15"
                     :rotate="360"
                     :value="10"
                     color="blue"
-                  >
-                    10
-                  </v-progress-circular>
+                  >10</v-progress-circular>
                 </div>
               </div>
             </v-card-text>
@@ -288,8 +268,7 @@
                 ]"
                 height="350px"
                 width="100%"
-              >
-              </e-chart>
+              ></e-chart>
             </div>
           </v-widget>
         </v-flex>
@@ -308,19 +287,14 @@
                 ]"
                 height="350px"
                 width="100%"
-              >
-              </e-chart>
+              ></e-chart>
             </div>
           </v-widget>
         </v-flex>
         <v-flex lg12 sm12>
           <v-tabs v-model="selectedTab" @change="handleTabChange">
-            <v-tab ripple href="#tab-1">
-              Sales
-            </v-tab>
-            <v-tab ripple href="#tab-2">
-              Visit
-            </v-tab>
+            <v-tab ripple href="#tab-1">Sales</v-tab>
+            <v-tab ripple href="#tab-2">Visit</v-tab>
             <v-tabs-items v-model="selectedTab">
               <v-tab-item value="tab-1" class="d-block">
                 <v-card>
@@ -333,8 +307,7 @@
                   ]"
                     height="350px"
                     width="100%"
-                  >
-                  </e-chart>
+                  ></e-chart>
                 </v-card>
               </v-tab-item>
               <v-tab-item value="tab-2">
@@ -346,8 +319,7 @@
                   ]"
                     height="350px"
                     width="100%"
-                  >
-                  </e-chart>
+                  ></e-chart>
                 </v-card>
               </v-tab-item>
             </v-tabs-items>
@@ -359,50 +331,48 @@
 </template>
 
 <script>
-  import EChart from '@/components/chart/echart';
-  import {
-    StackData,
-    SinData,
-    monthVisitData,
-    campaignData,
-    locationData,
-  } from '@/api/chart';
-  import Material from 'vuetify/es5/util/colors';
-  import MiniChart from '@/components/widgets/chart/MiniChart';
-  import BoxChart from '@/components/widgets/chart/BoxChart';
-  import VWidget from '@/components/VWidget';
+import EChart from "@/components/chart/echart";
+import {
+  StackData,
+  SinData,
+  monthVisitData,
+  campaignData,
+  locationData
+} from "@/api/chart";
+import Material from "vuetify/es5/util/colors";
+import MiniChart from "@/components/widgets/chart/MiniChart";
+import BoxChart from "@/components/widgets/chart/BoxChart";
+import VWidget from "@/components/VWidget";
 
-  export default {
-    components: {
-      BoxChart,
-      MiniChart,
-      EChart,
-      VWidget
-    },
-    data() {
-      return {
-        selectedTab: 'tab-1',
-        option: null,
-        dataset: {
-          sinData: SinData,
-          monthVisit: monthVisitData,
-          campaign: campaignData,
-          location: locationData,
-          stackData: StackData,
-        },
-        color: Material,
-
-      };
-    },
-    created() {
-      console.log(this.$refs.chart);
-    },
-    methods: {
-      handleTabChange(val, e) {
-        // make sure the chart resized while parent from hidden to show
-        window.dispatchEvent(new Event('resize'));
-      }
-    },
-
-  };
+export default {
+  components: {
+    BoxChart,
+    MiniChart,
+    EChart,
+    VWidget
+  },
+  data() {
+    return {
+      selectedTab: "tab-1",
+      option: null,
+      dataset: {
+        sinData: SinData,
+        monthVisit: monthVisitData,
+        campaign: campaignData,
+        location: locationData,
+        stackData: StackData
+      },
+      color: Material
+    };
+  },
+  created() {
+    console.log(this.$refs.chart);
+  },
+  methods: {
+    handleTabChange(val, e) {
+      // make sure the chart resized while parent from hidden to show
+      window.dispatchEvent(new Event("resize"));
+    }
+  }
+};
 </script>

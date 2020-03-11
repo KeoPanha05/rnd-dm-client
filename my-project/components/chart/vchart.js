@@ -8,7 +8,7 @@ Object.entries(colors).forEach((item) => {
 export default {
   name: 'v-chart',
 
-  render (h) {
+  render(h) {
     const data = {
       staticClass: 'v-chart',
       ref: 'canvas',
@@ -26,7 +26,7 @@ export default {
   }),
 
   methods: {
-    init () {
+    init() {
       this.chartInstance = new G2.Chart({
         container: this.$refs.canvas,
         forceFit: true,
@@ -34,21 +34,21 @@ export default {
       });
 
     },
-    resize () {
+    resize() {
       this.chartInstance.resize();
     },
-    clean () {
+    clean() {
       window.removeEventListener('resize', this.chartInstance.resize);
       this.chartInstance.dispose();
-    }    
+    }
   },
-  mounted () {
+  mounted() {
     this.init();
     window.addEventListener('resize', () => {
       this.resize();
     });
   },
-  beforeDestroy () {
+  beforeDestroy() {
     this.clean();
   }
 };
