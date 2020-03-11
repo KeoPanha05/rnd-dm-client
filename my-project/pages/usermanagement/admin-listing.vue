@@ -1,8 +1,11 @@
 <template>
   <div>
     <v-container grid-list-x1 fluid>
-      <v-layout>
-        <v-flex 12 lg>
+      <v-layout row wrap>
+        <v-flex lg3 sm6 xs12>
+          <mini-statistic icon="fa fa-facebook" title="100+" sub-title="Likes" color="indigo"></mini-statistic>
+        </v-flex>
+        <v-flex lg12>
           <v-card>
             <v-toolbar card color="white">
               <v-text-field
