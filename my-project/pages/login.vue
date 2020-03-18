@@ -7,6 +7,7 @@
             <v-card class="elevation-1 pa-3">
               <v-card-text>
                 <div class="layout column align-center">
+<<<<<<< HEAD
                   <img src="../static/rnd.png" alt="Vue Material Admin" height="120" />
                   <h1 class="flex my-4 primary--text">
                     <b>RnD Data Management</b>
@@ -14,15 +15,26 @@
                 </div>
                 <v-form>
                   <v-text-field
+=======
+                  <img src="../static/rnd.png" alt="Vue Material Admin" height="120"/>
+                  <h1 class="flex my-4 primary--text"><b>RnD Data Management</b></h1>
+                </div>
+                <v-form>
+                  <v-text-field 
+>>>>>>> aacfb46f39629aba679afad3a060ddc1755406f5
                     append-icon="person"
                     name="login"
                     label="Username / Email"
                     type="text"
+<<<<<<< HEAD
                     placeholder="Input your username/email"
                     v-model="model.username"
                     :rules="[v => !!v || 'username/email is required',
                     v => (v && v.length >= 8) || 'username/email must have 8+ characters' ]"
                     required
+=======
+                    v-model="model.username"
+>>>>>>> aacfb46f39629aba679afad3a060ddc1755406f5
                   ></v-text-field>
                   <v-text-field
                     append-icon="lock"
@@ -30,11 +42,15 @@
                     label="Password"
                     id="password"
                     type="password"
+<<<<<<< HEAD
                     placeholder="Input your Password"
                     v-model="model.password"
                     :rules="[v => !!v || 'password is required',
                     v => (v && v.length >= 8) || 'Password must have 8+ characters' ]"
                     required
+=======
+                    v-model="model.password"
+>>>>>>> aacfb46f39629aba679afad3a060ddc1755406f5
                   ></v-text-field>
                 </v-form>
               </v-card-text>
@@ -71,9 +87,14 @@ export default {
   data: () => ({
     loading: false,
     model: {
+<<<<<<< HEAD
       username: "",
       password: "",
       isValid: true
+=======
+      username: "admin@example.com",
+      password: "password"
+>>>>>>> aacfb46f39629aba679afad3a060ddc1755406f5
     }
   }),
 

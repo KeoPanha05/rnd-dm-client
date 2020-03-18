@@ -71,7 +71,11 @@ const StackData = StackMainData.map((item, key) => {
 const AdminStackMainData = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
 const AdminStackData = AdminStackMainData.map((item, key) => {
   return {
+<<<<<<< HEAD
     'label': key + 'D',
+=======
+    'label': key + 'Day',
+>>>>>>> aacfb46f39629aba679afad3a060ddc1755406f5
     'max': 500,
     'sales': item,
   };
