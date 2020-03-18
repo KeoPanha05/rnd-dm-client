@@ -63,7 +63,31 @@ const StackData = StackMainData.map((item, key) => {
     'max': 500,
     'sales': item,
   };
-});   
+});
+
+
+
+// for Admin Chart
+const AdminStackMainData = [220, 182, 191, 234, 290, 330, 310, 123, 442, 321, 90, 149, 210, 122, 133, 334, 198, 123, 125, 220];
+const AdminStackData = AdminStackMainData.map((item, key) => {
+  return {
+    'label': key + 'D',
+    'max': 500,
+    'sales': item,
+  };
+});
+// for Admin Chart
+const UserStackMainData = [241, 363, 200, 169, 107, 125, 216, 139, 293, 363, 392, 400, 78, 138, 251, 297, 199, 67, 406, 109];
+const UserStackData = UserStackMainData.map((item, key) => {
+  return {
+    'label': key + 'D',
+    'max': 500,
+    'sales': item,
+  };
+});
+
+
+
 const SinData = range(1, 12).map(i => {
   return {
     'cate': 'Cat' + i,
@@ -78,4 +102,7 @@ export {
   locationData,
   StackData,
   SinData,
+
+  AdminStackData,
+  UserStackData
 };
